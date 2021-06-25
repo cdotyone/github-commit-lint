@@ -1,0 +1,33 @@
+{
+  "name": "github-commit-lint",
+  "version": "1.0.0",
+  "description": "Checks to see if commit messages meet standards",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "package": "ncc build index.js -o dist",
+    "test": "eslint index.js && jest",
+    "build": "ncc build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdotyone/github-commit-lint.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
+  "author": "Chris Doty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cdotyone/github-commit-lint/issues"
+  },
+  "homepage": "https://github.com/cdotyone/github-commit-lint#readme",
+  "dependencies": {
+    "@actions/core": ">=1.2.6",
+    "glob": "^7.1.6",
+    "util": "^0.12.3"
+  },
+  "devDependencies": {}
+}

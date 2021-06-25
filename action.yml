@@ -1,0 +1,12 @@
+name: 'Get .Net Version'
+description: 'Set .net file assembly version'
+branding:
+  icon: 'tag'
+  color: 'gray-dark'
+inputs:
+  version:
+    description: 'version# to set'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
