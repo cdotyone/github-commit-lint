@@ -4,8 +4,8 @@ branding:
   icon: 'tag'
   color: 'gray-dark'
 inputs:
-  version:
-    description: 'version# to set'
+  message:
+    description: 'commit message'
     required: true
 runs:
   using: 'node12'
