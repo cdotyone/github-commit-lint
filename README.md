@@ -11,6 +11,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: 'Commit Lint'
         id: semver
-        uses: "cdotyone/github-next-version@main"
+        uses: "cdotyone/github-commit-lint@main"
 ```
 
