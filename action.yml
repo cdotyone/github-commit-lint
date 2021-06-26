@@ -1,5 +1,5 @@
-name: 'Get .Net Version'
-description: 'Set .net file assembly version'
+name: 'github-commit-lint'
+description: 'Checks commit message for proper format'
 branding:
   icon: 'tag'
   color: 'gray-dark'
