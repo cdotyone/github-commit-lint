@@ -19,3 +19,5 @@ jobs:
       - name: 'Commit Lint'
         id: semver
         uses: "cdotyone/github-commit-lint@main"
+        with:
+          message: "${{github.event.head_commit.message}}"
