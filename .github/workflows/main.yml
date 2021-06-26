@@ -23,5 +23,7 @@ jobs:
       - name: 'Get Previous tag'
         id: semver
         uses: "cdotyone/github-next-version@main"
+        with:
+          message: "${{github.event.head_commit.message}}"
         env:
           GITHUB_TOKEN: "${{ github.token }}"
