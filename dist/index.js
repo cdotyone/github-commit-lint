@@ -2895,6 +2895,47 @@ module.exports = {
 
 /***/ }),
 
+/***/ 5398:
+/***/ ((module) => {
+
+module.exports = {
+	rules: {
+		'body-leading-blank': [1, 'always'],
+		'footer-leading-blank': [1, 'always'],
+		'header-max-length': [2, 'always', 72],
+		'scope-case': [2, 'always', 'lower-case'],
+		'subject-case': [
+			2,
+			'never',
+			['sentence-case', 'start-case', 'pascal-case', 'upper-case']
+		],
+		'subject-empty': [2, 'never'],
+		'subject-full-stop': [2, 'never', '.'],
+		'type-case': [2, 'always', 'lower-case'],
+		'type-empty': [2, 'never'],
+		'type-enum': [
+			2,
+			'always',
+			[
+				'build',
+				'chore',
+				'ci',
+				'docs',
+				'feat',
+				'fix',
+				'perf',
+				'refactor',
+				'revert',
+				'style',
+				'test'
+			]
+		]
+	}
+};
+
+
+/***/ }),
+
 /***/ 8445:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
@@ -55433,6 +55474,7 @@ const core = __nccwpck_require__(2186);
 const load = __nccwpck_require__(6791).default;
 const read = __nccwpck_require__(8439)/* .default */ .Z;
 const lint = __nccwpck_require__(9152).default;
+const conventional = __nccwpck_require__(5398);
 const format = __nccwpck_require__(5854).default;
 
 let message = core.getInput('message');

@@ -2,6 +2,7 @@ const core = require('@actions/core');
 const load = require('@commitlint/load').default;
 const read = require('@commitlint/read').default;
 const lint = require('@commitlint/lint').default;
+const conventional = require('@commitlint/config-conventional');
 const format = require('@commitlint/format').default;
 
 let message = core.getInput('message');
