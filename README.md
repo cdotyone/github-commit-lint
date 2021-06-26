@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: 'Commit Lint'
-        id: semver
         uses: "cdotyone/github-commit-lint@main"
 ```
 
