@@ -10,6 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: 'Commit Lint'
-        uses: "cdotyone/github-commit-lint@main"
+        uses: "cdotyab/github-commit-lint@main"
+        with:
+          message: "${{github.event.head_commit.message}}"        
 ```
 
