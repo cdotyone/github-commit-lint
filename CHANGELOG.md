@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/cdotyone/github-commit-lint/compare/v1.1.0...v1.1.1) (2021-10-05)
+
+
+### Bug Fixes
+
+* add debug ([03e602b](https://github.com/cdotyone/github-commit-lint/commit/03e602b097ae2b154a76b396faa57f2c3651e2bc))
+
+
+
 # [1.1.0](https://github.com/cdotyone/github-commit-lint/compare/v0.1.0...v1.1.0) (2021-07-05)
 
 
