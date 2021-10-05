@@ -18,6 +18,8 @@ load().then(({rules, parserPreset}) => {
         parserPreset
     );
 }).then((report)=> {
+
+    console.log(JSON.stringify(report));
     if(report.valid) {
         console.log("commit-lint: good commit message");
         if(report.warnings && report.warnings.length>0) console.log(report.warnings);
