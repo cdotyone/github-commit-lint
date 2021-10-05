@@ -11,7 +11,7 @@ if(!message) {
     process.exit(1);
 }
 
-load().then(({rules, parserPreset}) => {
+load({extends: ['./commitlint.config']}).then(({rules, parserPreset}) => {
     return lint(
         message,
         rules,
