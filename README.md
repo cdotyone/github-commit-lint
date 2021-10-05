@@ -13,5 +13,4 @@ jobs:
         uses: "cdotyone/github-commit-lint@main"
         with:
           message: "${{github.event.head_commit.message}}"
-```
 
