@@ -3,7 +3,7 @@ const load = require('@commitlint/load').default;
 const read = require('@commitlint/read').default;
 const lint = require('@commitlint/lint').default;
 const format = require('@commitlint/format').default;
-
+const config = require('./commitlint.config')
 let message = core.getInput('message');
 if(!message) {
     console.error("commit-lint: bad commit message");
@@ -11,7 +11,7 @@ if(!message) {
     process.exit(1);
 }
 
-load({extends: ['./commitlint.config']}).then(({rules, parserPreset}) => {
+load(config).then(({rules, parserPreset}) => {
     return lint(
         message,
         rules,
