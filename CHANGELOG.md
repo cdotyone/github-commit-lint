@@ -1,3 +1,12 @@
+## [1.1.4](https://github.com/cdotyone/github-commit-lint/compare/v1.1.3...v1.1.4) (2021-10-05)
+
+
+### Bug Fixes
+
+* point to config in project ([be2266e](https://github.com/cdotyone/github-commit-lint/commit/be2266eb97d69ab9bc5a745ccc8e003305c05462))
+
+
+
 ## [1.1.3](https://github.com/cdotyone/github-commit-lint/compare/v1.1.2...v1.1.3) (2021-10-05)
 
 
@@ -40,20 +49,6 @@
 ### Features
 
 * add message parameter ([ede1605](https://github.com/cdotyone/github-commit-lint/commit/ede16054d695c78fa90b1e23dbfc94220cb206e5))
-
-
-
-# [0.1.0](https://github.com/cdotyone/github-commit-lint/compare/e2d72e9b39924965651249dcc6f3e834528f2cce...v0.1.0) (2021-06-26)
-
-
-### Bug Fixes
-
-* missing compiled version ([77829d0](https://github.com/cdotyone/github-commit-lint/commit/77829d04569aa81f2c2a9026603be0d128d791b1))
-
-
-### Features
-
-* first draft of compiled commitlint action ([e2d72e9](https://github.com/cdotyone/github-commit-lint/commit/e2d72e9b39924965651249dcc6f3e834528f2cce))
 
 
 
