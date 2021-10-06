@@ -1,8 +1,5 @@
 const core = require('@actions/core');
-const load = require('@commitlint/load').default;
-const read = require('@commitlint/read').default;
 const lint = require('@commitlint/lint').default;
-const format = require('@commitlint/format').default;
 const config = require('./commitlint.config')
 let message = core.getInput('message');
 if(!message) {
@@ -10,15 +7,6 @@ if(!message) {
     console.error("message: is a required parameter");
     process.exit(1);
 }
-
-/*load(config).then(({rules, parserPreset}) => {
-    return lint(
-        message,
-        rules,
-        parserPreset
-    );
-})*/
-
 
 lint(
     message,
