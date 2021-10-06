@@ -55592,8 +55592,8 @@ if(!message) {
 
 lint(
     message,
-    config,
-    null
+    config.rules,
+    config.prompt
 ).then((report)=> {
     console.log(JSON.stringify(report));
     if(report.valid) {
