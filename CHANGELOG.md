@@ -1,3 +1,12 @@
+## [1.1.8](https://github.com/cdotyone/github-commit-lint/compare/v1.1.7...v1.1.8) (2021-10-06)
+
+
+### Bug Fixes
+
+* cleanup ([b3a4711](https://github.com/cdotyone/github-commit-lint/commit/b3a4711c7d0f9747af40af62fdbe169cadcfebbd))
+
+
+
 ## [1.1.7](https://github.com/cdotyone/github-commit-lint/compare/v1.1.6...v1.1.7) (2021-10-06)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * point to config in project ([be2266e](https://github.com/cdotyone/github-commit-lint/commit/be2266eb97d69ab9bc5a745ccc8e003305c05462))
-
-
-
-## [1.1.3](https://github.com/cdotyone/github-commit-lint/compare/v1.1.2...v1.1.3) (2021-10-05)
-
-
-### Bug Fixes
-
-* add debug ([8d8728b](https://github.com/cdotyone/github-commit-lint/commit/8d8728b59d61c168436a5059ec41c8edd59eb313))
 
 
 
