@@ -1,3 +1,12 @@
+## [1.1.6](https://github.com/cdotyone/github-commit-lint/compare/v1.1.5...v1.1.6) (2021-10-06)
+
+
+### Bug Fixes
+
+* try direct include ([09994b5](https://github.com/cdotyone/github-commit-lint/commit/09994b5cd7079a85930dc2a9717cb4a9cc67137e))
+
+
+
 ## [1.1.5](https://github.com/cdotyone/github-commit-lint/compare/v1.1.4...v1.1.5) (2021-10-05)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * remove debug ([0cffaed](https://github.com/cdotyone/github-commit-lint/commit/0cffaedb851cd53a53dc39d681d6a851799c18b1))
-
-
-
-## [1.1.1](https://github.com/cdotyone/github-commit-lint/compare/v1.1.0...v1.1.1) (2021-10-05)
-
-
-### Bug Fixes
-
-* add debug ([03e602b](https://github.com/cdotyone/github-commit-lint/commit/03e602b097ae2b154a76b396faa57f2c3651e2bc))
 
 
 
