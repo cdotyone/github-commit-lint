@@ -1,6 +1,145 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 1070:
+/***/ ((module) => {
+
+module.exports = {
+    rules: {
+        'body-leading-blank': [1, 'always'],
+        'body-max-line-length': [2, 'always', 100],
+        'footer-leading-blank': [1, 'always'],
+        'footer-max-line-length': [2, 'always', 100],
+        'header-max-length': [2, 'always', 120],
+        'subject-case': [0],
+        'subject-empty': [2, 'never'],
+        'subject-full-stop': [2, 'never', '.'],
+        'type-case': [2, 'always', 'lower-case'],
+        'type-empty': [2, 'never'],
+        'type-enum': [
+            2,
+            'always',
+            [
+                'feat',
+                'fix',
+                'docs',
+                'refactor',
+                'test',
+                'perf',
+                'bump',
+                'chore',
+                'revert',
+                'build',
+                'ci',
+                'style'
+            ],
+        ],
+        'scope-empty': [0]
+    },
+    prompt: {
+        questions: {
+            type: {
+                description: "Select the type of change that you're committing:",
+                enum: {
+                    feat: {
+                        description: 'A new feature',
+                        title: 'Features',
+                        emoji: '✨',
+                    },
+                    fix: {
+                        description: 'A bug fix',
+                        title: 'Bug Fixes',
+                        emoji: '🐛',
+                    },
+                    docs: {
+                        description: 'Documentation only changes',
+                        title: 'Documentation',
+                        emoji: '📚',
+                    },
+                    style: {
+                        description:
+                            'Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)',
+                        title: 'Styles',
+                        emoji: '💎',
+                    },
+                    refactor: {
+                        description:
+                            'A code change that neither fixes a bug nor adds a feature',
+                        title: 'Code Refactoring',
+                        emoji: '📦',
+                    },
+                    perf: {
+                        description: 'A code change that improves performance',
+                        title: 'Performance Improvements',
+                        emoji: '🚀',
+                    },
+                    test: {
+                        description: 'Adding missing tests or correcting existing tests',
+                        title: 'Tests',
+                        emoji: '🚨',
+                    },
+                    build: {
+                        description:
+                            'Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)',
+                        title: 'Builds',
+                        emoji: '🛠',
+                    },
+                    ci: {
+                        description:
+                            'Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)',
+                        title: 'Continuous Integrations',
+                        emoji: '⚙️',
+                    },
+                    chore: {
+                        description: "Other changes that don't modify src or test files",
+                        title: 'Chores',
+                        emoji: '♻️',
+                    },
+                    revert: {
+                        description: 'Reverts a previous commit',
+                        title: 'Reverts',
+                        emoji: '🗑',
+                    },
+                },
+            },
+            scope: {
+                description:
+                    'What is the scope of this change (e.g. component or file name)',
+            },
+            subject: {
+                description:
+                    'Write a short, imperative tense description of the change',
+            },
+            body: {
+                description: 'Provide a longer description of the change',
+            },
+            isBreaking: {
+                description: 'Are there any breaking changes?',
+            },
+            breakingBody: {
+                description:
+                    'A BREAKING CHANGE commit requires a body. Please enter a longer description of the commit itself',
+            },
+            breaking: {
+                description: 'Describe the breaking changes',
+            },
+            isIssueAffected: {
+                description: 'Does this change affect any open issues?',
+            },
+            issuesBody: {
+                description:
+                    'If issues are closed, the commit requires a body. Please enter a longer description of the commit itself',
+            },
+            issues: {
+                description: 'Add issue references (e.g. "fix #123", "re #123".)',
+            },
+        },
+    },
+};
+
+
+/***/ }),
+
 /***/ 7351:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
@@ -55434,7 +55573,7 @@ const load = __nccwpck_require__(6791).default;
 const read = __nccwpck_require__(8439)/* .default */ .Z;
 const lint = __nccwpck_require__(9152).default;
 const format = __nccwpck_require__(5854).default;
-
+const config = __nccwpck_require__(1070)
 let message = core.getInput('message');
 if(!message) {
     console.error("commit-lint: bad commit message");
@@ -55442,7 +55581,7 @@ if(!message) {
     process.exit(1);
 }
 
-load({extends: ['./commitlint.config']}).then(({rules, parserPreset}) => {
+load(config).then(({rules, parserPreset}) => {
     return lint(
         message,
         rules,
