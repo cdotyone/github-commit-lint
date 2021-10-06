@@ -11,14 +11,20 @@ if(!message) {
     process.exit(1);
 }
 
-load(config).then(({rules, parserPreset}) => {
+/*load(config).then(({rules, parserPreset}) => {
     return lint(
         message,
         rules,
         parserPreset
     );
-}).then((report)=> {
+})*/
 
+
+lint(
+    message,
+    config,
+    null
+).then((report)=> {
     console.log(JSON.stringify(report));
     if(report.valid) {
         console.log("commit-lint: good commit message");
